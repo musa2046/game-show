@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Button from "./button";
+import Button from "./Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import finalbgimage from "../assets/finalbg-image.png";
