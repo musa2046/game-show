@@ -335,3 +335,4 @@ export default function RegisterPage() {
         </section>
     );
 }
+export const dynamic = "force-dynamic";
