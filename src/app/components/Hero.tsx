@@ -6,12 +6,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import finalbgimage from "../assets/finalbg-image.png";
 
+
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-900 via-black to-yellow-900 text-white overflow-hidden pt-28 md:pt-20">
-
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
+        <section
+            className="relative min-h-screen flex items-center text-white overflow-hidden pt-28 md:pt-20
+                       bg-cover bg-center bg-no-repeat"
+            style={{
+                backgroundImage: "url('/images/bg2.png')",
+            }}
+        >
+            {/* DARK OVERLAY */}
+            <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]"></div>
 
             {/* Floating Golden Glow */}
             <div className="absolute -top-20 -left-20 w-72 h-72 bg-yellow-500/20 blur-3xl rounded-full"></div>
@@ -64,7 +70,7 @@ export default function Hero() {
                         </Link>
 
                         <p className="text-sm md:text-base font-medium text-yellow-300">
-                            <span className="font-bold text-white">Free Entry</span> in Lucky Draw!
+                            <span className="font-bold text-white ">Free Entry</span> in Lucky Draw!
                         </p>
                     </motion.div>
 
